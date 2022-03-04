@@ -1,0 +1,57 @@
+:root {
+  --mainBlue: #2a2a72;
+  --primaryBlue: #009ffd;
+  --mainWhite: #e9e9e9;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+}
+
+body {
+  font-family: "Arial Narrow", Impact, Haettenschweiler, sans-serif !important;
+  background-color: var(--mainWhite) !important;
+}
+
+* {
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+.text-title {
+  font-family: "Lobster" !important;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.text-blue {
+  color: var(--mainBlue);
+}
+
+.text-bright {
+  color: var(--primaryBlue);
+}
+
+img.card-img-top {
+  aspect-ratio: 1 / 1.2 !important;
+  object-fit: contain;
+}
+
+.btn-black {
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainDark) !important;
+}
+
+.btn-black:hover {
+  background-color: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}

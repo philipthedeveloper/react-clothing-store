@@ -1,0 +1,7 @@
+{
+  "editor.fontSize": 13,
+  "editor.fontFamily": "'Fira code medium'",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorStyle": "block",
+  "workbench.activityBar.visible": false
+}
