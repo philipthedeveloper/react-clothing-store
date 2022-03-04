@@ -31,8 +31,9 @@ function Modal(props) {
                   <ButtonContainer
                     className="mt-2"
                     onClick={() => closeModal()}
+                    className="d-block mx-auto mt-2"
                   >
-                    Continue Shopping
+                    Store
                   </ButtonContainer>
                 </Link>
 

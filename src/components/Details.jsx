@@ -40,13 +40,13 @@ function Details(props) {
             {/* buttons */}
             <div>
               <Link to="/">
-                <ButtonContainer className="mt-4">
+                <ButtonContainer className="mt-4 special">
                   back to products
                 </ButtonContainer>
               </Link>
               <ButtonContainer
                 cart
-                className="ml-4  mt-4"
+                className="ml-4 special mt-4"
                 disabled={inCart}
                 onClick={() => {
                   addToCart(id);
