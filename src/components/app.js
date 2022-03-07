@@ -7,12 +7,14 @@ import ProductList from "./ProductList";
 import Details from "./Details";
 import Default from "./Default";
 import Modal from "./Modal";
+import SuccessModal from "./SuccessModal";
 
 function App(props) {
   return (
     <>
       <Navbar />
       <Modal />
+      <SuccessModal />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<ProductList />} />
