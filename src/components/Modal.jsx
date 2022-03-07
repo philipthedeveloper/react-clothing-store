@@ -29,9 +29,8 @@ function Modal(props) {
                 <h5 className="text-muted">price : $ {price}</h5>
                 <Link to="/">
                   <ButtonContainer
-                    className="mt-2"
                     onClick={() => closeModal()}
-                    className="d-block mx-auto mt-2"
+                    className="col-8 mx-auto mt-2"
                   >
                     Store
                   </ButtonContainer>

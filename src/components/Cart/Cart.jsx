@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router";
 import Title from "../Title";
 import CartColumn from "./CartColumn";
 import EmptyCart from "./EmptyCart";
@@ -8,7 +9,8 @@ import CartTotals from "./CartTotals";
 
 function Cart(props) {
   const value = useContext(productsData);
-  const { cart } = value;
+  const { cart, showModal } = value;
+  const navigate = useNavigate();
 
   return (
     <>
@@ -18,7 +20,11 @@ function Cart(props) {
             <Title name="your" title="cart" />
             <CartColumn />
             <CartList value={value} />
-            <CartTotals value={value} />
+            <CartTotals
+              value={value}
+              navigate={navigate}
+              showModal={showModal}
+            />
           </>
         ) : (
           <EmptyCart />

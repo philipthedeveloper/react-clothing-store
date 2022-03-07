@@ -13,6 +13,15 @@ function Context(props) {
   const [cartSubTotal, setCartSubTotal] = useState(0);
   const [cartTax, setCartTax] = useState(0);
   const [cartTotal, setCartTotal] = useState(0);
+  const [success, setSuccess] = useState(false);
+
+  const showModal = () => {
+    if (success) {
+      setTimeout(() => setSuccess(!success), 300);
+    } else {
+      setTimeout(() => setSuccess(!success), 3000);
+    }
+  };
 
   const setProducts = () => {
     let products = [];
@@ -141,6 +150,8 @@ function Context(props) {
         cartSubTotal,
         cartTax,
         cartTotal,
+        success,
+        showModal,
         addToCart,
         changeDetail,
         openModal,
